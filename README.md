@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +14,10 @@
       <p>Where Style Meets Legacy</p>
       <a href="#products" class="shop-now">Shop Now</a>
     </div>
-  </header>  <!-- Product Section -->  <section id="products" class="products">
+  </header>
+
+  <!-- Product Section -->
+  <section id="products" class="products">
     <h2>Featured Products</h2>
     <div class="product-grid">
       <div class="product-card">
@@ -29,13 +33,22 @@
         <a href="#" class="buy-btn">Buy Now</a>
       </div>
     </div>
-  </section>  <!-- About Section -->  <section class="about">
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
     <h2>About Us</h2>
     <p>The Vastraa is your premium clothing brand inspired by traditional elegance and modern flair. We blend culture with class.</p>
-  </section>  <!-- Shipping & Payment -->  <section class="shipping">
+  </section>
+
+  <!-- Shipping & Payment -->
+  <section class="shipping">
     <h2>Shipping & Payment</h2>
     <p>We offer COD & Online Payment. Shipping within 3-5 days all over Bangladesh.</p>
-  </section>  <!-- Contact Form -->  <section class="contact">
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact">
     <h2>Contact Us</h2>
     <form action="#" method="post">
       <input type="text" name="name" placeholder="Your Name" required />
@@ -43,7 +56,10 @@
       <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
     </form>
-  </section>  <!-- Footer -->  <footer>
+  </section>
+
+  <!-- Footer -->
+  <footer>
     <p>&copy; 2025 The Vastraa. All rights reserved.</p>
     <div class="socials">
       <a href="#">Facebook</a>
