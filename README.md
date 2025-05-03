@@ -1,27 +1,54 @@
-import React from "react"; import { Button } from "@/components/ui/button"; import { Card, CardContent } from "@/components/ui/card";
-
-export default function Home() { return ( <main className="min-h-screen bg-black text-white p-6"> <section className="text-center py-20"> <h1 className="text-5xl font-bold mb-4">Wovenheir</h1> <p className="text-lg max-w-xl mx-auto">Premium streetwear & apparel for the bold generation. Crafted with style, powered by attitude.</p> <Button className="mt-6 text-lg px-6 py-3">Shop Now</Button> </section>
-
-<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-10">
-    <Card>
-      <CardContent className="bg-white text-black rounded-2xl p-4">
-        <img src="/images/tshirt.png" alt="T-shirt" className="w-full h-56 object-cover rounded-xl" />
-        <h2 className="mt-4 text-xl font-semibold">Hip Hop Carti Tee</h2>
-        <p className="text-sm text-gray-600">Oversized Graphic T-shirt, Summer Unisex</p>
-        <p className="mt-2 font-bold">৳760</p>
-        <Button className="mt-4 w-full">Buy Now</Button>
-      </CardContent>
-    </Card>
-
-    {/* Repeat for more products */}
-  </section>
-
-  <footer className="bg-gray-900 text-gray-300 text-center py-6 mt-12">
-    <p>Wovenheir is a proud part of ASF Group</p>
-    <p>Office: Saterkul, Uttor Badda, Dhaka-1212</p>
-    <p>Phone: 01769910116</p>
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Vastraa - Premium Wear</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>The Vastraa</h1>
+      <p>Where Style Meets Legacy</p>
+      <a href="#products" class="shop-now">Shop Now</a>
+    </div>
+  </header>  <!-- Product Section -->  <section id="products" class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="product1.jpg" alt="Kurti" />
+        <h3>Embroidered Kurti</h3>
+        <p>৳1299</p>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="product2.jpg" alt="Saree" />
+        <h3>Silk Saree</h3>
+        <p>৳3499</p>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+  </section>  <!-- About Section -->  <section class="about">
+    <h2>About Us</h2>
+    <p>The Vastraa is your premium clothing brand inspired by traditional elegance and modern flair. We blend culture with class.</p>
+  </section>  <!-- Shipping & Payment -->  <section class="shipping">
+    <h2>Shipping & Payment</h2>
+    <p>We offer COD & Online Payment. Shipping within 3-5 days all over Bangladesh.</p>
+  </section>  <!-- Contact Form -->  <section class="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>  <!-- Footer -->  <footer>
+    <p>&copy; 2025 The Vastraa. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+    </div>
   </footer>
-</main>
-
-); }
-
+</body>
+</html>
