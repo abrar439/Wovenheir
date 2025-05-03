@@ -1,0 +1,37 @@
+import React from "react"; import { Card, CardContent } from "@/components/ui/card"; import { Button } from "@/components/ui/button"; import { ShoppingCart } from "lucide-react";
+
+const products = [ { name: "Hip Hop Playboi Carti T-Shirt", price: "760 Tk", image: "/products/cartitshirt.jpg", description: "Graphic Print Tees Summer Top Oversized For Unisex Man Woman Black XXXL", category: "Clothing", }, // More demo products can be added here... ];
+
+export default function Home() { return ( <div className="min-h-screen bg-black text-white p-4"> <header className="text-center py-6"> <h1 className="text-4xl font-bold tracking-wider">Wovenheir</h1> <p className="text-sm text-gray-400 mt-2">A subsidiary of ASF Group</p> </header>
+
+<section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    {products.map((product, index) => (
+      <Card key={index} className="bg-gray-900 text-white">
+        <img
+          src={product.image}
+          alt={product.name}
+          className="w-full h-60 object-cover rounded-t-2xl"
+        />
+        <CardContent className="p-4">
+          <h2 className="text-xl font-semibold">{product.name}</h2>
+          <p className="text-sm text-gray-400 mt-1">{product.description}</p>
+          <div className="flex justify-between items-center mt-4">
+            <span className="font-bold text-lg">{product.price}</span>
+            <Button variant="outline" className="text-white border-white">
+              <ShoppingCart className="w-4 h-4 mr-1" /> Add to Cart
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
+    ))}
+  </section>
+
+  <footer className="text-center mt-16 text-gray-500 text-sm">
+    <p>Office: Saterkul, Uttor Badda, Dhaka-1212</p>
+    <p>Phone: ০১৭৬৯৯১০১১৬</p>
+    <p>&copy; 2025 Wovenheir by ASF Group. All rights reserved.</p>
+  </footer>
+</div>
+
+); }
+
